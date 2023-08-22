@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Astropods | The Solar System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="planet.css">
+<link rel="stylesheet" href="planet_animation.css">
+<style>
+    .hero {
+        background:url('uranus-bg.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+</head>
+<body>
+    <div class="load"></div>
+    <div class="vid-container">
+        <img src="uranus.png" alt="">
+    </div>
+    <div class="container">
+        <div class="hero">
+            <h1 class="first">URANUS</h1>
+            <p><b>Image.</b> Another iconic photo of Uranus taken in 1986 by the Voyager 2 spacecraft</p>
+            <div class="button-container">
+                <a onclick="document.querySelector('.about').scrollIntoView(true);">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <p>Uranus, the planet with the most controversial pronounciation, remains one of the most elusive planets in the Solar System, and one with a clear naming problem.</p>
+        <h1>ABOUT</h1>
+    </div>
+    <div class="main">
+        <div class="image-with-caption">
+            <div class="image">
+                <img src="uranus-color.jpg" alt="">
+                <h1>URANUS</h1>
+            </div>
+            <div class="caption">
+                <p style="width:50%;">An iconic crescent photo of Uranus taken in 1986 by the Voyager 2 spacecraft</p>
+                <p>Source: NASA</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="table">
+                <div class="row">
+                    <h2>MASS</h2>
+                    <p>8.6*10<sup>25</sup> kilograms</p>
+                </div>
+                <div class="row">
+                    <h2>RADIUS</h2>
+                    <p>25,559 km</p>
+                </div>
+                <div class="row">
+                    <h2>YEAR</h2>
+                    <p>84 years</p>
+                </div>
+                <div class="row">
+                    <h2>DAY</h2>
+                    <p>17 hours</p>
+                </div>
+                <div class="row">
+                    <h2>MOONS</h2>
+                    <p>27</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <h1><span>Stats</span></h1>
+        </div>
+    </div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="app.js"></script>
+    <script src="uranus.js"></script>
+</body>
+</html>

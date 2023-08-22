@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Astropods | The Solar System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="planet.css">
+<link rel="stylesheet" href="planet_animation.css">
+<style>
+    .hero {
+        background:url('neptune-bg.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+</head>
+<body>
+    <div class="load"></div>
+    <div class="vid-container">
+        <video src="neptune.mp4" id="flux-video" width="75%" loop muted></video>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <h1 class="first">NEPTUNE</h1>
+            <p><b>Image.</b> Another iconic photo taken by the Voyager 2 probe, but of Neptune and its Great Dark Spot</p>
+            <div class="button-container">
+                <a onclick="document.querySelector('.about').scrollIntoView(true);">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <p>Neptune is currently the farthest known object in the Solar System that astronomers consider to be a planet.</p>
+        <h1>ABOUT</h1>
+    </div>
+    <div class="main">
+        <div class="image-with-caption">
+            <div class="image">
+                <img src="neptune-color.jpg" alt="">
+                <h1>NEPTUNE</h1>
+            </div>
+            <div class="caption">
+                <p style="width:50%;">South pole of Neptune imaged using sensors aboard the Voyager 2 spacecraft</p>
+                <p>Source: NASA</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="table">
+                <div class="row">
+                    <h2>MASS</h2>
+                    <p>1.02*10<sup>26</sup> kilograms</p>
+                </div>
+                <div class="row">
+                    <h2>RADIUS</h2>
+                    <p>24,622 km</p>
+                </div>
+                <div class="row">
+                    <h2>YEAR</h2>
+                    <p>165 years</p>
+                </div>
+                <div class="row">
+                    <h2>DAY</h2>
+                    <p>16 hours</p>
+                </div>
+                <div class="row">
+                    <h2>MOONS</h2>
+                    <p>14</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <h1><span>Stats</span></h1>
+        </div>
+    </div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="app.js"></script>
+    <script src="planets.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Astropods | The Solar System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="planet.css">
+<link rel="stylesheet" href="planet_animation.css">
+<style>
+    .hero {
+        background:url('mars-bg.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+</head>
+<body>
+    <div class="load"></div>
+    <div class="vid-container">
+        <video src="mars.mp4" id="flux-video" width="75%" loop muted></video>
+    </div>
+    <div class="container">
+        <div class="hero">
+            <h1 class="first">MARS</h1>
+            <p><b>Image.</b> An image of the Valles Marineris canyon system on Mars taken by the Viking 1 Orbiter, stretching over 3000 km long</p>
+            <div class="button-container">
+                <a onclick="document.querySelector('.about').scrollIntoView(true);">LEARN MORE</a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <p>Mars is the fourth planet from the Sun, the furthest from the Sun with a solid surface and the second smallest planet in the Solar System after Mercury.</p>
+        <h1>ABOUT</h1>
+    </div>
+    <div class="main">
+        <div class="image-with-caption">
+            <div class="image">
+                <img src="rover.jpg" alt="">
+                <h1>MARS</h1>
+            </div>
+            <div class="caption">
+                <p style="width:50%;">An image of the Valles Marineris canyon system on Mars taken by the Viking 1 Orbiter, stretching over 3000 km long</p>
+                <p>Source: NASA</p>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="table">
+                <div class="row">
+                    <h2>MASS</h2>
+                    <p>6.42*10<sup>23</sup> kilograms</p>
+                </div>
+                <div class="row">
+                    <h2>RADIUS</h2>
+                    <p>3,390 km</p>
+                </div>
+                <div class="row">
+                    <h2>YEAR</h2>
+                    <p>687 days</p>
+                </div>
+                <div class="row">
+                    <h2>DAY</h2>
+                    <p>24.7 hours</p>
+                </div>
+                <div class="row">
+                    <h2>MOONS</h2>
+                    <p>2</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <h1><span>Stats</span></h1>
+        </div>
+    </div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="app.js"></script>
+    <script src="planets.js"></script>
+</body>
+</html>
